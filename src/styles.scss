@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../src/styles/global/font-style";
+
+// ***** Modify Angular material default style ***** //
+@import "~@angular/material/theming";
+
+$custom-typography: mat-typography-config($font-family: $ltk-font);
+
+@include mat-core($custom-typography);
+
+// ***** End Modify Angular material default style ***** //
+
+body {
+  margin: 0;
+  font-family: $ltk-font;
+}

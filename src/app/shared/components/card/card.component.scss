@@ -1,0 +1,9 @@
+.ltk-card {
+    width: 250px;
+    margin: 5px;
+    
+    &__image {
+        height: 212px;
+        object-fit: cover;
+    }
+}
